@@ -1,0 +1,12 @@
+1 - file => new project(sem main.py)
+2 - pip install django (instalando django)
+3 - pip freeze (printando requisitos)
+4 - pip freeze -> requirements (criando arquivo com requisitos)
+5 - new file com ".gitignore" (botar /venv e .idea/)
+6 - django-admin startproject core(nome) . (iniciar cabeça do projeto)
+7 - django-admin startapp [nome do app](criando membros)
+8 - no settings(core) referenciar app no "INSTALLED_APPS" ('uva')
+9 - criar forms.py dentro do app e criar class
+    9.1 - importar from django.forms import ModelForm
+    9.2 - importar caminho da classe no arquivo forms
+    from app(pasta).arquivo import (nome da class)

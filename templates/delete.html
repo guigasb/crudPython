@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Página de exclusão de registro {% endblock %}
+
+{%block body%}
+    <h2>Apague seus erros</h2>
+    <h2>Deseja REALEMENTE excluir o registo para sempre da sua base de dados: {{superman.nome}}</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Adeus, para nunca mais</button>
+            <a href="{% url 'lista' %}">Não, deixa o bixin aí</a>
+        </form>
+
+{%endblock%}

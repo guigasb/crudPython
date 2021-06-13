@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Página de Edição de Registro {% endblock %}
+
+{%block body%}
+    <h2>Corrigindo erros aqui</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Salvar</button>
+        </form>
+    <button><a href="{% url 'lista'%}">Voltar</a></button>
+{%endblock%}

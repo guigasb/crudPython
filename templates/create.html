@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Página de Cadastro e Registro {% endblock %}
+
+{%block body%}
+    <h2>Cadastre aqui</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Salvar</button>
+        </form>
+
+{%endblock%}
